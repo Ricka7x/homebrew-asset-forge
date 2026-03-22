@@ -26,7 +26,7 @@ class AssetForge < Formula
 
   resource "scripts" do
     url "https://github.com/Ricka7x/asset-forge/releases/download/v0.1.0/scripts.tar.gz"
-    sha256 "2c788a0c6ad58b93e987150f6c7d6fb4c97cebad540085ec98db11cc77d2517d"
+    sha256 "4767b9c544194fbb6b926e30fb278e0fa843c7377ad67b4efd62f2e26e2c0e9d"
   end
 
   def install
