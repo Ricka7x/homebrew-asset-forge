@@ -26,13 +26,13 @@ class AssetForge < Formula
 
   resource "scripts" do
     url "https://github.com/Ricka7x/asset-forge/releases/download/v0.1.0/scripts.tar.gz"
-    sha256 "4767b9c544194fbb6b926e30fb278e0fa843c7377ad67b4efd62f2e26e2c0e9d"
+    sha256 "932ea1dcc86710c261ca68a2849edd4480020798e7fcc6c1777a30ef6b197e5d"
   end
 
   def install
     os   = OS.mac? ? "darwin" : "linux"
     arch = Hardware::CPU.arm? ? "arm64" : "x64"
-    bin.install "asset-forge-\#{os}-\#{arch}" => "asset-forge"
+    bin.install "asset-forge-#{os}-#{arch}" => "asset-forge"
     bin.install_symlink "asset-forge" => "forge"
 
     scripts_dir = libexec/"asset-forge/scripts"
