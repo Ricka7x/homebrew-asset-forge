@@ -1,32 +1,32 @@
 class AssetForge < Formula
   desc "The complete asset toolkit for developers"
   homepage "https://github.com/Ricka7x/asset-forge"
-  version "0.2.4"
+  version "0.2.5"
 
   depends_on "imagemagick"
   depends_on "ffmpeg"
 
   on_macos do
     on_arm do
-      url "https://github.com/Ricka7x/asset-forge/releases/download/v0.2.4/asset-forge-darwin-arm64"
-      sha256 "266c12b3180ecce0fd39cef5cd6343e205471ade435f989a686e9f274ef2b4a0"
+      url "https://github.com/Ricka7x/asset-forge/releases/download/v0.2.5/asset-forge-darwin-arm64"
+      sha256 "b520cdf7b9f7c66af69be97ca97f8b871e3c8e94214890e06e09bcfd0da5f89b"
     end
     on_intel do
-      url "https://github.com/Ricka7x/asset-forge/releases/download/v0.2.4/asset-forge-darwin-x64"
-      sha256 "3ae847fdf6df31ac27231fedcfa09ee2ee01c65133b858c90943ec36d0af9179"
+      url "https://github.com/Ricka7x/asset-forge/releases/download/v0.2.5/asset-forge-darwin-x64"
+      sha256 "76ad8ab72194c7603344d80347088cc555336aadd7b57af2a0d92f18f81838e4"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Ricka7x/asset-forge/releases/download/v0.2.4/asset-forge-linux-x64"
-      sha256 "d17747cc15d1583797f235e5b22b5755ea330379855c02925a2ee8628d6a2969"
+      url "https://github.com/Ricka7x/asset-forge/releases/download/v0.2.5/asset-forge-linux-x64"
+      sha256 "f643fc75d6c8b003fa5eece694b9bca55dc7e467dcecbe265f7acb8ba7302446"
     end
   end
 
   resource "scripts" do
-    url "https://github.com/Ricka7x/asset-forge/releases/download/v0.2.4/scripts.tar.gz"
-    sha256 "ad5668cbd054adbc38e9af872d86d6c351fffb097bc8c4fb7306acf3f4583943"
+    url "https://github.com/Ricka7x/asset-forge/releases/download/v0.2.5/scripts.tar.gz"
+    sha256 "4f3edca42026b1f733d08fd485f9d561b454abb71b2a3d4adb890cf0df5aa8c7"
   end
 
   def install
