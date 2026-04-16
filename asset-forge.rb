@@ -1,10 +1,11 @@
 class AssetForge < Formula
   desc "The complete asset toolkit for developers"
   homepage "https://github.com/Ricka7x/asset-forge"
-  url "https://registry.npmjs.org/@ricka7x/asset-forge/-/asset-forge-0.3.4.tgz"
-  sha256 "f1e31359bcbdaf58fb23fc55c34b5be7b08a7c22e6d3c21bf30a805128c0f0ad"
+  url "https://registry.npmjs.org/@ricka7x/asset-forge/-/asset-forge-0.3.5.tgz"
+  sha256 "5ee9f67dc6f4fc9f4f29fb32b9721ae39644e74330541c41ee0b039ac29c8ec9"
 
   depends_on "node"
+  depends_on "ffmpeg"
 
   def install
     system "npm", "install", *std_npm_args(prefix: libexec)
